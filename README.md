@@ -4,10 +4,11 @@ PyCommander
 PyCommander is a simple system for organizing commands. This example shows how it work: 
 
 ```python
-from PyCommandTable import PyCommandTable
-from PyCommand import PyCommand
+import PyCommand
+import PyCommandTable
 
-class MyCommand(PyCommand): # we are defining new class on top of the PyCommand
+class MyCommand(PyCommand.PyCommand): # we are defining new class on top of the PyCommand
+
     def __init__(self):
         super(MyCommand, self).__init__('$') # initing trigger, the $(dolar) sign will be the trigger
 
